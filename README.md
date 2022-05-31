@@ -44,13 +44,13 @@ $ cutcat -c "2021" SalesData.csv
 12000
 123200
 
-$ cutcat -c "Products Name", "2021" SalesData.csv
+$ cutcat -c "Products Name" -c "2021" SalesData.csv
 Products Name, 2021
 A, 36000
 B, 12000
 C, 123200
 
-$ cutcat -n 0,4,5 SalesData.csv
+$ cutcat -n 0 -n 4 -n 5 SalesData.csv
 Products Name, 2020, 2021
 A, 12000, 36000
 B, 54300, 12000
